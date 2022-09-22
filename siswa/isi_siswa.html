@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uji Level XI</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Oxygen Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+        <a href="../index.php" class="logo"><img src="../img/logo.png">SarPras</a>
+    <hr>
+        <ul>
+            <li><a href="index.php" class="active"><img src="../img/group.png">Data Siswa</a></li>
+            <li><a href="../barang/index.php"><img src="../img/box.png">Data Barang</a></li>
+        </ul>
+
+        <div class="container">
+            <div class="judul2">
+                <h3>Isi Data Siswa</h3>
+            </div>
+    <div class="square2">
+        <div class="input">
+            <form action="create.php" method="post">
+                <p><label>Id Siswa </label>
+                    <label class="colon">:</label>
+                    <input type="text" name="id_siswa" required="required" placeholder="Masukkan Id Siswa">
+                </p>
+                <p><label>Nama Siswa </label>
+                    <label class="colon">:</label>
+                    <input type="text" name="nama" required="required" placeholder="Masukkan Nama Siswa">
+                </p>
+                <p><label>Jenis Kelamin </label>
+                    <label class="colon">:</label>
+                    <input type="text" name="gender" required="required" placeholder="Masukkan Jenis Kelamin Anda">
+                </p>
+                <p><label>Alamat </label>
+                    <label class="colon">:</label>
+                    <input type="text" name="alamat" required="required" placeholder="Masukkan Alamat Anda">
+                </p>
+                <p><label>Tanggal Lahir </label>
+                    <label class="colon">:</label>
+                    <input type="date" name="tgl_lahir" required="required">
+                </p>
+                <p><label>Kelas </label>
+                    <label class="colon">:</label>
+                    <input type="text" name="kelas" required="required" placeholder="Masukkan Kelas Anda">
+                </p>
+                <input type="submit" name="create" value="CREATE">
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

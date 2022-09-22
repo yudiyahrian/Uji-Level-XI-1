@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uji Level XI</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Oxygen Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+        <a href="../index.php" class="logo"><img src="../img/logo.png">SarPras</a>
+    <hr>
+        <ul>
+            <li><a href="../siswa/index.php"><img src="../img/group.png">Data Siswa</a></li>
+            <li><a href="index.php" class="active"><img src="../img/box.png">Data Barang</a></li>
+        </ul>
+
+        <div class="container">
+            <div class="judul2">
+                <h3>Isi Data Barang</h3>
+            </div>
+    <div class="square2">
+        <div class="input">
+            <form action="create.php" method="post">
+                <p><label>Id Barang </label>
+                    <label class="colon">:</label>
+                    <input type="text" name="id_barang" required="required" placeholder="Masukkan Id Barang">
+                </p>
+                <p><label>Nama Barang </label>
+                    <label class="colon">:</label>
+                    <input type="text" name="nama" required="required" placeholder="Masukkan Nama Barang">
+                </p>
+                <p><label>Kategori </label>
+                    <label class="colon">:</label>
+                    <input type="text" name="kategori" required="required" placeholder="Masukkan Kategori Barang">
+                </p>
+                <p><label>Kondisi </label>
+                    <label class="colon">:</label>
+                    <input type="text" name="kondisi" required="required" placeholder="Masukkan Kondisi Barang">
+                </p>
+                <p><label>Jumlah Barang </label>
+                    <label class="colon">:</label>
+                    <input type="number" name="jml_barang" required="required" placeholder="Masukkan Jumlah Barang">
+                </p>
+                <p><label>Status </label>
+                    <label class="colon">:</label>
+                    <input type="text" name="status" required="required" placeholder="Masukkan Status Barang">
+                </p>
+                <input type="submit" name="create" value="CREATE">
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
